@@ -7,8 +7,7 @@
 	box-shadow: 10px 10px 5px #888888; opacity: 0.8;
 	margin: auto;
 	width: 700px;
-	height: 140px;
-	
+	height: 170px;
 }
 
 .backgroundcolor {
@@ -27,7 +26,19 @@
 }
 
 .pic {
+	background-image: url("https://scontent-lax3-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/13083162_10206995820638666_3371281386991428936_n.jpg?oh=47abcdeb285053b542d410fc8cc4ce72&oe=579D640B");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: auto;
+	width: 400px;
+	Height: 400px;
+	opacity: 0.85;
 	
+}
+
+
+a:hover {
+	background-color: white;
 }
 
 h1 {
