@@ -41,6 +41,8 @@ Desktop or Laptop for coding:
 <input type="radio" name="platform" value="Tablet">Tablet
 <br><br>
 <input type="submit">
+<br><br>
+<a href="results.php">Results Page</a>
 </form >
 </body>
 </html> 
