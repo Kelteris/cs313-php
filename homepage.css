@@ -7,12 +7,7 @@
 	box-shadow: 10px 10px 5px #888888; opacity: 0.8;
 	margin: auto;
 	width: 700px;
-<<<<<<< HEAD
 	height: 140px;
-	
-=======
-	height: 170px;
->>>>>>> 330d60909a6c8ea4c4fbf0a37abddaa483eed487
 }
 
 .backgroundcolor {
@@ -30,12 +25,13 @@
 	
 }
 
+.easyShade {
+	background-color: SkyBlue;
+}
 .pic {
-<<<<<<< HEAD
+
 	
 }
-
-=======
 	background-image: url("https://scontent-lax3-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/13083162_10206995820638666_3371281386991428936_n.jpg?oh=47abcdeb285053b542d410fc8cc4ce72&oe=579D640B");
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -51,7 +47,7 @@ a:hover {
 	background-color: white;
 }
 
->>>>>>> 330d60909a6c8ea4c4fbf0a37abddaa483eed487
 h1 {
 	text-align: center;
 }
+
