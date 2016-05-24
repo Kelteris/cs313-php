@@ -8,6 +8,6 @@
 <br /><br />
 <a href="survey.php">hw03 PHP Survey</a>
 <br /><br />
-<a href="loginPage.php">FHE Idea Bank Login Page</a>
+<a href="loginpage.php">FHE Idea Bank Login Page</a>
 </body>
 </html>

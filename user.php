@@ -20,7 +20,7 @@ catch (PDOException $ex)
 </head>
 <body class="backgroundcolor">
 	<h1>User list</h1>
-	<p><a href="loginPage.php">Login Page</a></p>
+	<p><a href="loginpage.php">Login Page</a></p>
 	<a href="fheideabank.php">Currently Stored Ideas</a>
 	<ul>
 <?php

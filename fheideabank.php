@@ -20,7 +20,7 @@ catch (PDOException $ex)
 </head>
 <body class="backgroundcolor">
 	<h1>FHE IDEAS</h1>
-	<p><a href="loginPage.php">Back to Login Page</a></p>
+	<p><a href="loginpage.php">Back to Login Page</a></p>
 	<p><a href="user.php">User List</a></p>
 <?php
 /*$stmt = $db->prepare('SELECT firstName FROM user WHERE id=:id');
