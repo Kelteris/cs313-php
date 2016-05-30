@@ -22,7 +22,7 @@ Name: <input type="text" name="name" placeholder="Name" value=""></input>
 Season: <input type="text" name="season" value=""></input>
 <br><br>
 <!-- create radio buttons for this 1 -10 -->
-Fitness Level: <input type="text" name="level" value=""></input>
+Fitness Level (1-10): <input type="text" name="level" value=""></input>
 <br><br>
 Set up time (minutes): <input type="text" name="minutes" value=""></input>
 <br><br>
