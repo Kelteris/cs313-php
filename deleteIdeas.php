@@ -1,30 +1,24 @@
 <?php
-try
-{
 
-	//require("dbCredentials.php");
-   require("dbConnector.php"); 
-	$db = loadDatabase(); 
-}
-catch (PDOException $ex) 
-{
-   echo 'Error!: ' . $ex->getMessage();
-   die(); 
-}
+require("dbConnector.php");
+$db = loadDatabase();
+
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FHE Idea Bank</title>
+	<title>Delete FHE idea</title>
 	<link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 <body class="backgroundcolor">
-	<h1>FHE IDEAS</h1>
-	<p><a href="loginpage.php">Back to Login Page</a>
-	<a href="user.php">User List</a></p>
-  <p><a href="enterIdeas.php">Create a new idea</a></p>
-  <p><a href="deleteIdeas.php">delete an Existing idea</a></p>
-  <p><a href="updateIdeas.php">update an Existing idea</a></p>
+<h1>Idea Deletion page</h1>
+<br><br>
+<form action="deletingIdea.php" method="POST">
+ID number: <input type="text" name="id" placeholder="ID number" value=""></input>
+<br><br>
+<input type="submit" value="Delete Idea"></input>
+</form>
 <?php
 /*$stmt = $db->prepare('SELECT firstName FROM user WHERE id=:id');
 $stmt->bindValue(':id', 3, PDO::PARAM_INT);
@@ -36,6 +30,7 @@ $stmt = $db->query('SELECT * FROM idea');
  
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo nl2br('<p> ' . 
+    'Idea Number: '. $row['id']. "  \n" .
     'Name: '.$row['name']." \n" .
     'season: '.$row['season']. " \n" .
     'Level of Fitness required: ' .$row['fitnessLevel']. " \n" .
@@ -43,10 +38,9 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     'Ideal groupsize for Activity: '.$row['groupSize']. " \n".
     'Description: ' .$row['description']. '</p>');
 }
-/*foreach ($rows as $row)
-{
-	echo '<li>' . $row['firstName'] . '</li>';
-}*/
 ?>
+<br><br>
+<p><a href="user.php">User List</a></p>
+<p><a href="fheideabank.php">Currently Available FHE Ideas</a></p>
 </body>
 </html>
