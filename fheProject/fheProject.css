@@ -1,0 +1,53 @@
+.center {
+	border: 2px solid black;
+	background-color: SkyBlue;
+	border-radius: 5px;
+	text-align: center;
+	opacity: 1;
+	box-shadow: 10px 10px 5px #888888; opacity: 0.8;
+	margin: auto;
+	width: 700px;
+	height: 140px;
+}
+
+.backgroundcolor {
+	background-color: LightGray;
+	text-align: center;
+}
+
+
+.backpic {
+	background-image: url("http://www.mormonnewsroom.org/media/640x360/Los-Angeles-California-Temple2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.easyShade {
+	background-color: SkyBlue;
+}
+.pic {
+
+	
+}
+	background-image: url("https://scontent-lax3-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/13083162_10206995820638666_3371281386991428936_n.jpg?oh=47abcdeb285053b542d410fc8cc4ce72&oe=579D640B");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: auto;
+	width: 400px;
+	Height: 400px;
+	opacity: 0.85;
+	
+}
+
+
+a:hover {
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
