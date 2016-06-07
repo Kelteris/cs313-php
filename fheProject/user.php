@@ -16,7 +16,7 @@ catch (PDOException $ex)
 <html>
 <head>
 	<title>List of Users</title>
-	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" type="text/css" href="fheProject.css">
 </head>
 <body class="backgroundcolor">
 	<h1>User list</h1>
@@ -35,7 +35,7 @@ $stmt = $db->query('SELECT * FROM user');
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo nl2br('<p> ' .
     	'Username: ' .$row['firstName'].' ' .$row['lastName']. " \n".
-    	'Email: ' .$row['emailAddress']. '</p>');
+    	'Email: ' .$row['email']. '</p>');
 }
 /*foreach ($rows as $row)
 {

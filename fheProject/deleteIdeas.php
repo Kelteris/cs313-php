@@ -9,7 +9,7 @@ $db = loadDatabase();
 <html>
 <head>
 	<title>Delete FHE idea</title>
-	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" type="text/css" href="fheProject.css">
 </head>
 <body class="backgroundcolor">
 <h1>Idea Deletion page</h1>
@@ -33,9 +33,9 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     'Idea Number: '. $row['id']. "  \n" .
     'Name: '.$row['name']." \n" .
     'season: '.$row['season']. " \n" .
-    'Level of Fitness required: ' .$row['fitnessLevel']. " \n" .
-    'Minutes required to set up: '.$row['setUpTimeInMins']. " \n".
-    'Ideal groupsize for Activity: '.$row['groupSize']. " \n".
+    'Level of Fitness required: ' .$row['level']. " \n" .
+    'Minutes required to set up: '.$row['minutes']. " \n".
+    'Ideal groupsize for Activity: '.$row['size']. " \n".
     'Description: ' .$row['description']. '</p>');
 }
 ?>

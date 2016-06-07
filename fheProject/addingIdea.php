@@ -11,7 +11,7 @@ $size = htmlspecialchars($_POST['size']);
 $description = htmlspecialchars($_POST['description']);
 
 
-$query = "INSERT INTO idea(name, season, fitnessLevel, setUpTimeInMins, groupSize, description) 
+$query = "INSERT INTO idea(name, season, level, minutes, size, description) 
 VALUES(:name, :season, :level, :minutes, :size, :description)";
 $stmt = $db->prepare($query);
 $stmt->bindValue(':name', $name, PDO::PARAM_STR);

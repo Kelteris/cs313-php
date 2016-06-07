@@ -18,18 +18,18 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     'Idea Number: '. $row['id']. "  \n" .
     'Name: '. $row['name']." \n" .
     'season: '.$row['season']. " \n" .
-    'Level of Fitness required: ' .$row['fitnessLevel']. " \n" .
-    'Minutes required to set up: '.$row['setUpTimeInMins']. " \n".
-    'Ideal groupsize for Activity: '.$row['groupSize']. " \n".
+    'Level of Fitness required: ' .$row['level']. " \n" .
+    'Minutes required to set up: '.$row['minutes']. " \n".
+    'Ideal groupsize for Activity: '.$row['size']. " \n".
     'Description: ' .$row['description']. '</p>');
 }
 $stmt = $db->query("SELECT * FROM idea WHERE id=$id");
 while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	$name = $row['name'];
 	$season = $row['season'];
-	$level = $row['fitnessLevel'];
-	$minutes = $row['setUpTimeInMins'];
-	$size = $row['groupSize'];
+	$level = $row['level'];
+	$minutes = $row['minutes'];
+	$size = $row['size'];
 	$description = $row['description'];
 }
 
@@ -38,10 +38,10 @@ while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 <html>
 <head>
 	<title>FHE updata idea</title>
-	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<link rel="stylesheet" type="text/css" href="fheProject.css">
 </head>
 <body class="backgroundcolor">
-<h1>Please make any deisred changes, to the respective field</h1>
+<h1>Please make any desired changes, to the respective field</h1>
 <br><br>
 <form action="updatingIdea.php" method="POST">
 Id: <input type="text" name="id" placeholder="number" value="<?php echo "$id" ?>"></input>
