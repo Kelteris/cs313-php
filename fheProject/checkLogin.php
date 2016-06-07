@@ -1,9 +1,8 @@
 <?php
 
-$name = htmlspecialchars($_POST['name']);
-$password = htmlspecialchars($_POST['password']);
 $email = htmlspecialchars($_POST['email']);
-$ = htmlspecialchars($_POST['season']);
+$password = htmlspecialchars($_POST['password']);
+
 
 header("Location: loginPage.php");
 die("Page should have been redirected");
